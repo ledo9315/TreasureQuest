@@ -31,3 +31,8 @@ git clone https://github.com/IhrGitHubBenutzername/CaptureTheCampus.git
 
 2. Navigate to the directory and run `java Main`.
 
+
+
+---
+
+Developed with ☕ and ❤️

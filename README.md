@@ -1,34 +1,33 @@
 # Treasure Quest
 
-## Überblick
+## Overview
 
-"Treasure Quest" ist ein zufallsbasiertes Roguelike-Spiel, bei dem Spieler auf Schatzsuche gehen und Fallen, Skeletten und Schleimen ausweichen müssen. Jede Runde erzeugt ein neues Layout, was das Spiel dynamisch und spannend macht.
+"Treasure Quest" is a random-based roguelike game where players embark on a treasure hunt, dodging traps, skeletons, and slimes. Each round generates a new layout, making the game dynamic and exciting.
 
-[![Screenshot-2023-12-06-034031.png](https://i.postimg.cc/9fckPfHN/Screenshot-2023-12-06-034031.png)](https://postimg.cc/bZFLppJQ)
+![Screenshot of Treasure Quest](https://i.postimg.cc/9fckPfHN/Screenshot-2023-12-06-034031.png)
 
-## Hauptmerkmale
+## Key Features
 
-- **Zufällige Spielumgebungen**: Jede Spielrunde generiert ein neues Spielfeld.
-- **Vielfältige Gegner**: Skelette und Schleime mit unterschiedlichen Bewegungsmustern.
-- **Schatzsuche**: Sammle Schätze, um Punkte zu erzielen.
-- **Animierte Charaktere**: Spieler, Skelette und Schleime mit Animationen.
-- **Einfache Steuerung**: Navigation im Spiel mit W, A, S, D.
-- **Soundtrack**: Untermalung durch einen 8-Bit-Adventure-Soundtrack.
+- **Random Game Environments**: Each game round generates a new playing field.
+- **Treasure Hunting**: Collect treasures to score points.
+- **Simple Controls**: Navigate the game using W, A, S, D.
+- **Soundtrack**: Accompanied by an 8-bit adventure soundtrack.
 
-## Technologie
+## Technology
 
-Das Spiel ist in Java geschrieben und nutzt Java Swing für die GUI. Es beinhaltet verschiedene Klassen für Spiellogik, Grafik und Steuerung.
+The game is written in Java and uses Java Swing for the GUI. It includes various classes for game logic, graphics, and control.
 
-## Anforderungen
+## Requirements
 
-- Java Runtime Environment (JRE) 8 oder höher.
+- Java Runtime Environment (JRE) 8 or higher.
 
-## Installation und Ausführung
+## Installation and Execution
 
-1. Repository klonen.
+1. Clone the repository.
    
 ```
 git clone https://github.com/IhrGitHubBenutzername/CaptureTheCampus.git
 ```
 
-2. Zum Verzeichnis navigieren und `java Main` ausführen.
+2. Navigate to the directory and run `java Main`.
+

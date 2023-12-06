@@ -26,4 +26,9 @@ Das Spiel ist in Java geschrieben und nutzt Java Swing für die GUI. Es beinhalt
 ## Installation und Ausführung
 
 1. Repository klonen.
+   
+```
+git clone https://github.com/IhrGitHubBenutzername/CaptureTheCampus.git
+```
+
 2. Zum Verzeichnis navigieren und `java Main` ausführen.

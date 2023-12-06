@@ -4,10 +4,12 @@ import static javax.swing.SwingUtilities.*;
 
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new GameFrame();
-            }
-        });
+        playSoundtrack();
+        new GameFrame();
+    }
+    private static void playSoundtrack() {
+        SoundManager soundManager = new SoundManager();
+        soundManager.loadSoundtrack("src/sounds/8bitAdventureSoundtrack.wav");
+        soundManager.playSoundtrack();
     }
 }

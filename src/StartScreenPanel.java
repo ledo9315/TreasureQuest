@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class StartScreenPanel extends JPanel {
 
-    private JButton startGameButton;
-    private JButton exitButton;
+    private final JButton startGameButton;
+    private final JButton exitButton;
     private BufferedImage backgroundImage;
     private BufferedImage title;
     private BufferedImage movement;

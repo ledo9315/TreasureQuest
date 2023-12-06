@@ -11,9 +11,8 @@ import java.io.IOException;
 public class Trap implements IconInterface {
 
     private Coordinate coordinate;
-    private BufferedImage[] images;
+    private final BufferedImage[] images;
     private int currentSpriteIndex;
-    private Timer animationTimer;
 
     public Trap(Coordinate coordinate) {
         this.coordinate = coordinate;
@@ -26,7 +25,8 @@ public class Trap implements IconInterface {
     private void setupAnimationTimer() {
         int animationDelay = 800; // Verzögerung zwischen den Animationsschritten in Millisekunden (hier: 200ms)
 
-        animationTimer = new Timer(animationDelay, new ActionListener() {
+        // Nächstes Sprite
+        Timer animationTimer = new Timer(animationDelay, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Nächstes Sprite

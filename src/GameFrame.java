@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class GameFrame extends JFrame {
 
-    private StartScreenPanel startScreenPanel;
+    private final StartScreenPanel startScreenPanel;
     private GamePanel gamePanel;
 
     public GameFrame() {
@@ -15,17 +15,17 @@ public class GameFrame extends JFrame {
         setLocationRelativeTo(null);
 
         startScreenPanel = new StartScreenPanel();
-        startScreenPanel.setStartGameListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                remove(startScreenPanel);
-                gamePanel = new GamePanel();
-                add(gamePanel);
-                revalidate();
-                repaint();
-                gamePanel.requestFocus();
-            }
+        startScreenPanel.setStartGameListener(e -> {
+            remove(startScreenPanel);
+            gamePanel = new GamePanel();
+            add(gamePanel);
+            revalidate();
+            repaint();
+            gamePanel.requestFocus();
         });
+
+        startScreenPanel.setExitGameListener(e -> System.exit(0));
+
         add(startScreenPanel);
 
         setVisible(true);

@@ -10,9 +10,8 @@ import java.io.IOException;
 
 public class Player implements IconInterface {
     private Coordinate coordinate;
-    private BufferedImage[] images;
+    private final BufferedImage[] images;
     private int currentSpriteIndex;
-    private Timer animationTimer;
 
     public Player(Coordinate coordinate) {
         this.coordinate = coordinate;
@@ -25,7 +24,8 @@ public class Player implements IconInterface {
     private void setupAnimationTimer() {
         int animationDelay = 200; // Verzögerung zwischen den Animationsschritten in Millisekunden (hier: 200ms)
 
-        animationTimer = new Timer(animationDelay, new ActionListener() {
+        // Nächstes Sprite
+        Timer animationTimer = new Timer(animationDelay, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Nächstes Sprite
@@ -38,20 +38,12 @@ public class Player implements IconInterface {
 
     public void movePlayer(char keyChar) {
         switch (keyChar) {
-            case 'w':
-                moveUp();
-                break;
-            case 'a':
-                moveLeft();
-                break;
-            case 's':
-                moveDown();
-                break;
-            case 'd':
-                moveRight();
-                break;
-            default:
-                break;
+            case 'w' -> moveUp();
+            case 'a' -> moveLeft();
+            case 's' -> moveDown();
+            case 'd' -> moveRight();
+            default -> {
+            }
         }
     }
 

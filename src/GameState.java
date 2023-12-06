@@ -76,9 +76,6 @@ class GameState {
         return false;
     }
 
-
-
-
     public int getTreasureCounter() {
         return treasureCounter;
     }

@@ -14,13 +14,10 @@ public class GamePanel extends JPanel implements KeyListener {
     private BufferedImage woodBG;
     private GameObjects gameObjects;
     private GameState gameState;
-    private SoundManager soundManager;
 
 
     public GamePanel() {
-        soundManager = new SoundManager();
-        soundManager.loadSoundtrack("src/8bitAdventureSoundtrack.wav");
-        soundManager.playSoundtrack();
+
 
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -98,7 +95,7 @@ public class GamePanel extends JPanel implements KeyListener {
     public void restart() {
         removeAll(); //Entfernt alle Objekte aus dem Container
         revalidate();
-        GameObjects gameObjects = new GameObjects(this);
+        GameObjects gameObjects = new GameObjects();
         this.gameObjects = gameObjects;
         gameObjects.init();
         this.gameState = new GameState(this, gameObjects);
@@ -114,6 +111,7 @@ public class GamePanel extends JPanel implements KeyListener {
 
 
     public void keyTyped(KeyEvent e) {
+
         gameObjects.getPlayer().movePlayer(e.getKeyChar());
         repaint();
     }

@@ -1,8 +1,5 @@
 import javax.imageio.ImageIO;
-import javax.swing.Timer;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.File;
@@ -12,9 +9,8 @@ import java.util.TimerTask;
 
 public class Slime extends Trap {
 
-    private BufferedImage[][] images;
+    private final BufferedImage[][] images;
     private int currentSpriteIndex;
-    private Timer slimeTimer;
     private int direction; // 0 = links, 1 = rechts
 
     public Slime(Coordinate coordinate) {
@@ -113,13 +109,11 @@ public class Slime extends Trap {
             images[0][3] = ImageIO.read(new File("src/icons/slime_spritesheet_04_left.png"));
 
 
-
             // Bilder für rechts
             images[1][0] = ImageIO.read(new File("src/icons/slime_spritesheet_01_right.png"));
             images[1][1] = ImageIO.read(new File("src/icons/slime_spritesheet_02_right.png"));
             images[1][2] = ImageIO.read(new File("src/icons/slime_spritesheet_03_right.png"));
             images[1][3] = ImageIO.read(new File("src/icons/slime_spritesheet_04_right.png"));
-
 
 
         } catch (IOException exc) {

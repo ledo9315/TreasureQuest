@@ -12,18 +12,11 @@ public class GameField {
                 gameField[i][j] = false;
             }
         }
-
     }
-
 
     public static boolean[][] getGameField() {
         return gameField;
     }
-
-    public static void setGameField(boolean[][] gameField) {
-        GameField.gameField = gameField;
-    }
-
 }
 
 

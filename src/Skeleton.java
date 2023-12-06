@@ -10,7 +10,7 @@ import java.util.TimerTask;
 
 public class Skeleton implements IconInterface {
     private Coordinate coordinate;
-    private BufferedImage[][] images;
+    private final BufferedImage[][] images;
     private int currentSpriteIndex;
     private int direction; // 0 = links, 1 = rechts
 
@@ -96,7 +96,6 @@ public class Skeleton implements IconInterface {
             images[0][4] = ImageIO.read(new File("src/icons/skeleton-left5.png"));
             images[0][5] = ImageIO.read(new File("src/icons/skeleton-left6.png"));
 
-
             // Bilder für rechts
             images[1][0] = ImageIO.read(new File("src/icons/skeleton-right1.png"));
             images[1][1] = ImageIO.read(new File("src/icons/skeleton-right2.png"));
@@ -104,7 +103,6 @@ public class Skeleton implements IconInterface {
             images[1][3] = ImageIO.read(new File("src/icons/skeleton-right4.png"));
             images[1][4] = ImageIO.read(new File("src/icons/skeleton-right5.png"));
             images[1][5] = ImageIO.read(new File("src/icons/skeleton-right6.png"));
-
 
         } catch (IOException exc) {
             System.out.println("Error opening image file treasure: " + exc.getMessage());

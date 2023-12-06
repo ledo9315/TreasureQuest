@@ -4,7 +4,7 @@
 
 "Treasure Quest" ist ein zufallsbasiertes Roguelike-Spiel, bei dem Spieler auf Schatzsuche gehen und Fallen, Skeletten und Schleimen ausweichen müssen. Jede Runde erzeugt ein neues Layout, was das Spiel dynamisch und spannend macht.
 
-![Screenshot aus dem Spiel]([URL_des_Bildes](https://postimg.cc/bZFLppJQ))
+[![Screenshot-2023-12-06-034031.png](https://i.postimg.cc/9fckPfHN/Screenshot-2023-12-06-034031.png)](https://postimg.cc/bZFLppJQ)
 
 ## Hauptmerkmale
 
